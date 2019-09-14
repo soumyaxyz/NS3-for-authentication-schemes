@@ -201,7 +201,25 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	The deployment aspects are under development.
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
+       
+       
+    # 12
+    ### http://arxiv.org/abs/cs/0411058v1
+    ## Deployment in dynamic environments
+    
+    0 	Information and communication technologies are moving towards a new stage where applications will be dynamically deployed, uninstalled, updated and (re)configured.
+    0 	Several approaches have been followed with the goal of creating a fully automated and context-aware deployment system.
+    -1 	Ideally, this system should be capable of handling the dynamics of this new situation, without losing sight of other factors, such as performance, security, availability or scalability.
+    -1 	We will take some of the technologies that follow the principles of Service Oriented Architectures, SOA, as a paradigm of dynamic environments.
+    -1 	SOA promote the breaking down of applications into sets of loosely coupled elements, called services.
+    -1 	Services can be dynamically bound, deployed, reconfigured, uninstalled and updated.
+    -1 	First of all, we will try to offer a broad view on the specific deployment issues that arise in these environments.
+    -1 	Later on, we will present our approach to the problem.
+    -1 	One of the essential points that has to be tackled to develop an automated deployment engine will be to have enough information to carry out tasks without human intervention.
+    -1 	In the article we will focus on the format and contents of deployment descriptors.
+    -1 	Additionally, we will go into the details of the deployment framework for OSGi enabled gateways that has been developed by our research group.
+    -1 	Finally we will give some concluding remarks and some ideas for future work 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MTg0MjA4MSwtNTk0NDMwMTg1LC0yMD
-M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
+eyJoaXN0b3J5IjpbODI4OTg4MzksLTU5NDQzMDE4NSwtMjAzND
+M4NTY1NSwtNzQ2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
 -->
