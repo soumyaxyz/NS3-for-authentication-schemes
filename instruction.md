@@ -1,3 +1,6 @@
+
+t
+
 # Instructions 
 The instructions on how to label the data is detailed below.  If doubt presists, feel free to mail me for clarifications.
 ###  The structure of the provided file
@@ -220,6 +223,7 @@ The abstracts samples from before are labeled. Since several lines of the second
     2 	Additionally, we will go into the details of the deployment framework for OSGi enabled gateways that has been developed by our research group.
     2 	Finally we will give some concluding remarks and some ideas for future work 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzI4MDY0LC01OTQ0MzAxODUsLTIwMz
-QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
+eyJoaXN0b3J5IjpbMjYxOTU3MDIsMTg1MzI4MDY0LC01OTQ0Mz
+AxODUsLTIwMzQzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQw
+XX0=
 -->
