@@ -59,6 +59,8 @@ The erronous line breaks from the previous sample are fixed below:
     
     -1 	Wireless LANs have achieved a tremendous amount of growth in recent years.
     //-1 	Among various wireless LAN technologies, the IEEE 802.
+    //-1 	11b based wireless LAN technology can be cited as the most prominent technology today.
+    -1 	Among various wireless LAN technologies, the IEEE 802.
     -1 	11b based wireless LAN technology can be cited as the most prominent technology today.    
     -1 	Despite being widely deployed, 802.
     -1 	11b cannot be termed as a well matured technology.
@@ -96,6 +98,6 @@ The erronous line breaks from the previous sample are fixed below:
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDIyMTM5MDksLTIwMzQzODU2NTUsLT
-c0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
+eyJoaXN0b3J5IjpbMTg3MzU3ODE1NywtMjAzNDM4NTY1NSwtNz
+Q2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
 -->
