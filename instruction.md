@@ -125,8 +125,10 @@ If several lines in an abstract are hard to classfy, leave the entire abstract u
 **Do not label if in doubt**. Make sure the labels you put are accurate.
 Attempt to label **at least  10 out of the 15** abstracts.
 
+The abstracts samples from before are labeled 
 
-# 10
+
+    # 10
     ### http://arxiv.org/abs/cs/0411017v1
     ## Analysis of 802.11b MAC: A QoS, Fairness, and Performance Perspective
     
@@ -161,6 +163,6 @@ Attempt to label **at least  10 out of the 15** abstracts.
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA2NDQ5ODksLTU5NDQzMDE4NSwtMj
-AzNDM4NTY1NSwtNzQ2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbMjM4OTMyOTAyLC01OTQ0MzAxODUsLTIwMz
+QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
