@@ -49,7 +49,7 @@ A slice from a file containing two abstracts are shown below :
 
 ## Step one
 
-First identify where lines were unnessacsrily  
+First, identify where lines were unnecessarily  divided and merge the
 
     # 10
     ### http://arxiv.org/abs/cs/0411017v1
@@ -94,6 +94,6 @@ First identify where lines were unnessacsrily
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDE4MzM5OSwtMjAzNDM4NTY1NSwtNz
-Q2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbLTE5MDQ2MjYyODgsLTIwMzQzODU2NTUsLT
+c0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
