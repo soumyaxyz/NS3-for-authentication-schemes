@@ -112,13 +112,15 @@ The erroneous line breaks from the previous sample are fixed below:
 ## Final step
 Each sentences is labeled as **-1** which means **undecided**.   
 Try to identitify the sentences of the abstract  per the labels described below
--1| undecided
+Label|Meaning
+-|-
+-1| UNDECIDED
 -|-
 0|BACKGROUND or OBJECTIVE
--
+-|-
 
 Now, attempt to label at least  10 abstracts
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTA2MzA1OSwtNTk0NDMwMTg1LC0yMD
+eyJoaXN0b3J5IjpbMTA0MjIxNDAwOSwtNTk0NDMwMTg1LC0yMD
 M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
 -->
