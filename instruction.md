@@ -49,7 +49,7 @@ A slice from a file containing two abstracts are shown below :
 
 ## Step one
 
-First, identify where lines were unnecessarily  divided and merge them back. The errors exists mostly in case where the **.** symblo  is used, but not a period.
+First, identify where lines were unnecessarily  divided and merge them back (remove the label from the second line) . The errors exists mostly in case where the **.** symbol  is used, but not a period.
 
 The erronous line breaks from the previous sample are fixed below:
 
@@ -74,8 +74,8 @@ The erronous line breaks from the previous sample are fixed below:
     //-1 	11b MAC.
     -1 	To enunciate our claims we highlight some of the quality of service, fairness, and performance issues related to 802.11b MAC.     
     -1 	We also describe and analyze some of the current research aimed at addressing these issues.
-    -1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
-    -1 	11b and similar networks.
+    //-1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
+    //-1 	11b and similar networks.
     -1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
     -1 	11b and similar networks.
 
@@ -86,8 +86,9 @@ The erronous line breaks from the previous sample are fixed below:
     ## J2EE Deployment: The JOnAS Case Study
     
     -1 	La specification J2EE (Java 2 platform Enterprise Edition) definit une architecture de serveur d'application Java.
-    -1 	Jusqu'a J2EE 1.
-    -1 	3, seuls les aspects de deploiement concernant le developpeur d'applications etaient adresses.
+    //-1 	Jusqu'a J2EE 1.
+    //-1 	3, seuls les aspects de deploiement concernant le developpeur d'applications etaient adresses.
+    -1 	Jusqu'a J2EE 1.3, seuls les aspects de deploiement concernant le developpeur d'applications etaient adresses.
     -1 	Avec J2EE 1.
     -1 	4, les interfaces et les etapes de deploiement ont ete plus precisement specifiees dans la specification "J2EE Deployment".
     -1 	JOnAS (Java Open Application Server) est une plate-forme J2EE developpee au sein du consortium ObjectWeb.
@@ -104,6 +105,6 @@ The erronous line breaks from the previous sample are fixed below:
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzgzNTQwNSwtMjAzNDM4NTY1NSwtNz
-Q2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbNzk5NDc2OTgzLC0yMDM0Mzg1NjU1LC03ND
+YxNTA1MDEsMTk4ODg4NDM0MF19
 -->
