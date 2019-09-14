@@ -60,14 +60,16 @@ The erronous line breaks from the previous sample are fixed below:
     -1 	Wireless LANs have achieved a tremendous amount of growth in recent years.
     //-1 	Among various wireless LAN technologies, the IEEE 802.
     //-1 	11b based wireless LAN technology can be cited as the most prominent technology today.
-    -1 	Among various wireless LAN technologies, the IEEE 802.
-    -1 	11b based wireless LAN technology can be cited as the most prominent technology today.    
-    -1 	Despite being widely deployed, 802.
-    -1 	11b cannot be termed as a well matured technology.
-    -1 	Although 802.
-    -1 	11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
-    -1 	In this survey report, we identify and argue that the Medium Access Controller for 802.
-    -1 	11b networks is the prime area for these improvements.
+    -1 	Among various wireless LAN technologies, the IEEE 802.11b based wireless LAN technology can be cited as the most prominent technology today.    
+    //-1 	Despite being widely deployed, 802.
+    //-1 	11b cannot be termed as a well matured technology.
+    -1 	Despite being widely deployed, 802.11b cannot be termed as a well matured technology.
+    //-1 	Although 802.
+    //-1 	11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
+     -1 	Although 802.11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
+    //-1 	In this survey report, we identify and argue that the Medium Access Controller for 802.
+    //-1 	11b networks is the prime area for these improvements.
+    -1 	In this survey report, we identify and argue that the Medium Access Controller for 802.11b networks is the prime area for these improvements.
     -1 	To enunciate our claims we highlight some of the quality of service, fairness, and performance issues related to 802.
     -1 	11b MAC.
     -1 	We also describe and analyze some of the current research aimed at addressing these issues.
@@ -98,6 +100,6 @@ The erronous line breaks from the previous sample are fixed below:
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzU3ODE1NywtMjAzNDM4NTY1NSwtNz
-Q2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbLTE2MDM0NTg3NjcsLTIwMzQzODU2NTUsLT
+c0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
