@@ -1,5 +1,6 @@
 # Instructions 
-##  The raw file
+The instructions on how to label the data is detailed below.  If doubt presists, feel free to mail me for clarifications
+##  The structure of the provided file
 The attached file has **fifteen abstracts**  numbered from **n** to **n+15**. 
 A slice from a file containing two abstracts are shown below :
 
@@ -163,6 +164,6 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzAyMDU5MCwtNTk0NDMwMTg1LC0yMD
-M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
+eyJoaXN0b3J5IjpbNjM2NzY4OTM2LC01OTQ0MzAxODUsLTIwMz
+QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
