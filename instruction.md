@@ -49,9 +49,9 @@ A slice from a file containing two abstracts are shown below :
 
 ## Step one
 
-First, identify where lines were unnecessarily  divided and **merge them back  after removeing the label from the secondary lines** . The errors exists mostly in case where the **.** symbol  is used, but not as a period.
+First, identify where lines were unnecessarily divided and **merge them back after removing the label from the secondary lines **. The errors exist mostly in case where the **.** symbol is used, but not as a period.
 
-The erronous line breaks from the previous sample are fixed below:
+The erroneous line breaks from the previous sample are fixed below:
 
     # 10
     ### http://arxiv.org/abs/cs/0411017v1
@@ -107,7 +107,11 @@ The erronous line breaks from the previous sample are fixed below:
     -1 	The deployment aspects are under development.
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
+
+
+## Final step
+Now
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NDQzMDE4NSwtMjAzNDM4NTY1NSwtNz
-Q2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbODg0ODM1MDkwLC01OTQ0MzAxODUsLTIwMz
+QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
