@@ -1,6 +1,6 @@
 # Instructions 
-The instructions on how to label the data is detailed below.  If doubt presists, feel free to mail me for clarifications
-##  The structure of the provided file
+The instructions on how to label the data is detailed below.  If doubt presists, feel free to mail me for clarifications.
+###  The structure of the provided file
 The attached file has **fifteen abstracts**  numbered from **n** to **n+15**. 
 A slice from a file containing two abstracts are shown below :
 
@@ -48,7 +48,7 @@ A slice from a file containing two abstracts are shown below :
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.
 
 
-## Step one
+### Initial step
 
 First, identify where lines were unnecessarily divided and **merge them back after removing the label from the secondary lines **. The errors exist mostly in case where the **.** symbol is used, but not as a period.
 
@@ -133,7 +133,7 @@ The abstracts samples from before are labeled. Since several lines of the second
     ### http://arxiv.org/abs/cs/0411017v1
     ## Analysis of 802.11b MAC: A QoS, Fairness, and Performance Perspective
     
-    -1 	Wireless LANs have achieved a tremendous amount of growth in recent years.
+    0 	Wireless LANs have achieved a tremendous amount of growth in recent years.
     -1 	Among various wireless LAN technologies, the IEEE 802.11b based wireless LAN technology can be cited as the most prominent technology today. 
     -1 	Despite being widely deployed, 802.11b cannot be termed as a well matured technology.
     -1 	Although 802.11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
@@ -164,6 +164,6 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2NzY4OTM2LC01OTQ0MzAxODUsLTIwMz
-QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
+eyJoaXN0b3J5IjpbMTk2NTIzODMzMCwtNTk0NDMwMTg1LC0yMD
+M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
 -->
