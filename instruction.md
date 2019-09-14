@@ -1,6 +1,6 @@
 
 
-    ### 5352
+    ### 0
     ##### http://arxiv.org/abs/1804.05771v1
     #### Performance Evaluation of a Deployed 4G LTE Network
     0 In Ghana and many countries within Sub-Sahara Africa, Long Term Evolution (LTE) is being considered for use within the sectors of Governance, Energy distribution and transmission, Transport, Education and Health.
@@ -16,5 +16,5 @@
     0 87% achieved by the 4x4 MIMO configuration in the peculiar deployment terrain.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzQwMzkzODFdfQ==
+eyJoaXN0b3J5IjpbMTk4ODg4NDM0MF19
 -->
