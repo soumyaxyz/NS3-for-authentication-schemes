@@ -215,11 +215,11 @@ The abstracts samples from before are labeled. Since several lines of the second
     0 	Services can be dynamically bound, deployed, reconfigured, uninstalled and updated.
     1 	First of all, we will try to offer a broad view on the specific deployment issues that arise in these environments.
     1 	Later on, we will present our approach to the problem.
-    -1 	One of the essential points that has to be tackled to develop an automated deployment engine will be to have enough information to carry out tasks without human intervention.
-    -1 	In the article we will focus on the format and contents of deployment descriptors.
+    2 	One of the essential points that has to be tackled to develop an automated deployment engine will be to have enough information to carry out tasks without human intervention.
+    2 	In the article we will focus on the format and contents of deployment descriptors.
     2 	Additionally, we will go into the details of the deployment framework for OSGi enabled gateways that has been developed by our research group.
     2 	Finally we will give some concluding remarks and some ideas for future work 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NTA0MDQzNiwtNTk0NDMwMTg1LC0yMD
-M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
+eyJoaXN0b3J5IjpbMTg1MzI4MDY0LC01OTQ0MzAxODUsLTIwMz
+QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
