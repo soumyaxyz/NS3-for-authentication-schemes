@@ -49,7 +49,9 @@ A slice from a file containing two abstracts are shown below :
 
 ## Step one
 
-First, identify where lines were unnecessarily  divided and merge them back.  The errors exists mostly in case where the **.** symblo  is used, but not a a period
+First, identify where lines were unnecessarily  divided and merge them back. The errors exists mostly in case where the **.** symblo  is used, but not a period.
+
+The erronous line breaks from the previous sample are fixed below:
 
     # 10
     ### http://arxiv.org/abs/cs/0411017v1
@@ -58,8 +60,7 @@ First, identify where lines were unnecessarily  divided and merge them back.  Th
     -1 	Wireless LANs have achieved a tremendous amount of growth in recent years.
     -1 	Among various wireless LAN technologies, the IEEE 802.
     -1 	11b based wireless LAN technology can be cited as the most prominent technology today.
-    -1 	Despite being widely deployed, 802.
-    -1 	11b cannot be termed as a well matured technology.
+    -1 	Despite being widely deployed, 802.11b cannot be termed as a well matured technology.
     -1 	Although 802.
     -1 	11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
     -1 	In this survey report, we identify and argue that the Medium Access Controller for 802.
@@ -94,6 +95,6 @@ First, identify where lines were unnecessarily  divided and merge them back.  Th
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDM0OTU2MjcsLTIwMzQzODU2NTUsLT
+eyJoaXN0b3J5IjpbLTE3NTAyMjAxMTksLTIwMzQzODU2NTUsLT
 c0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
