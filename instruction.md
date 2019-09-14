@@ -99,6 +99,7 @@ The erroneous line breaks from the previous sample are fixed below:
     -1 	Les aspects deploiement sont en cours de developpement.
     -1 	Cet article decrit les concepts lies au deploiement dans J2EE, ainsi que les problematiques levees lors de leur mise en oeuvre pour JOnAS.
     -1 	Il n'a pas pour but de presenter un travail abouti, mais illustre le deploiement par un cas concret et ebauche une liste de besoins non encore satisfaits dans le domaine.
+    //-1 	-----   The J2EE (Java 2 platform Enterprise Edition) specification defines an architecture for Java Application Servers.
     -1 	-----   The J2EE (Java 2 platform Enterprise Edition) specification defines an architecture for Java Application Servers.
     //-1 	Until J2EE 1.
     //-1 	3, the deployment aspect was addressed from the developer point of view only.
@@ -157,7 +158,7 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	Les aspects deploiement sont en cours de developpement.
     -1 	Cet article decrit les concepts lies au deploiement dans J2EE, ainsi que les problematiques levees lors de leur mise en oeuvre pour JOnAS.
     -1 	Il n'a pas pour but de presenter un travail abouti, mais illustre le deploiement par un cas concret et ebauche une liste de besoins non encore satisfaits dans le domaine.
-    -1 	-----   The J2EE (Java 2 platform Enterprise Edition) specification defines an architecture for Java Application Servers.
+    -1 	The J2EE (Java 2 platform Enterprise Edition) specification defines an architecture for Java Application Servers.
     -1 	Until J2EE 1.3, the deployment aspect was addressed from the developer point of view only.
     -1 	Since J2EE 1.4, deployment APIs and steps have been more precisely specified within the "J2EE Deployment Specification".
     -1 	JOnAS (Java Open Application Server) is a J2EE platform implementation by ObjectWeb.
@@ -165,6 +166,6 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDI3MDA2NjMsLTU5NDQzMDE4NSwtMj
-AzNDM4NTY1NSwtNzQ2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbLTUxNjgzMTE5MywtNTk0NDMwMTg1LC0yMD
+M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
 -->
