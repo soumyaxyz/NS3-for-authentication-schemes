@@ -89,22 +89,25 @@ The erronous line breaks from the previous sample are fixed below:
     //-1 	Jusqu'a J2EE 1.
     //-1 	3, seuls les aspects de deploiement concernant le developpeur d'applications etaient adresses.
     -1 	Jusqu'a J2EE 1.3, seuls les aspects de deploiement concernant le developpeur d'applications etaient adresses.
-    -1 	Avec J2EE 1.
-    -1 	4, les interfaces et les etapes de deploiement ont ete plus precisement specifiees dans la specification "J2EE Deployment".
+    //-1 	Avec J2EE 1.
+    //-1 	4, les interfaces et les etapes de deploiement ont ete plus precisement specifiees dans la specification "J2EE Deployment".
+    -1 	Avec J2EE 1.4, les interfaces et les etapes de deploiement ont ete plus precisement specifiees dans la specification "J2EE Deployment".
     -1 	JOnAS (Java Open Application Server) est une plate-forme J2EE developpee au sein du consortium ObjectWeb.
     -1 	Les aspects deploiement sont en cours de developpement.
     -1 	Cet article decrit les concepts lies au deploiement dans J2EE, ainsi que les problematiques levees lors de leur mise en oeuvre pour JOnAS.
     -1 	Il n'a pas pour but de presenter un travail abouti, mais illustre le deploiement par un cas concret et ebauche une liste de besoins non encore satisfaits dans le domaine.
     -1 	-----   The J2EE (Java 2 platform Enterprise Edition) specification defines an architecture for Java Application Servers.
-    -1 	Until J2EE 1.
-    -1 	3, the deployment aspect was addressed from the developer point of view only.
-    -1 	Since J2EE 1.
-    -1 	4, deployment APIs and steps have been more precisely specified within the "J2EE Deployment Specification".
+    //-1 	Until J2EE 1.
+    //-1 	3, the deployment aspect was addressed from the developer point of view only.
+    -1 	Until J2EE 1.3, the deployment aspect was addressed from the developer point of view only.
+    //-1 	Since J2EE 1.
+    //-1 	4, deployment APIs and steps have been more precisely specified within the "J2EE Deployment Specification".
+    -1 	Since J2EE 1.4, deployment APIs and steps have been more precisely specified within the "J2EE Deployment Specification".
     -1 	JOnAS (Java Open Application Server) is a J2EE platform implementation by ObjectWeb.
     -1 	The deployment aspects are under development.
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY4MjM1MSwtMjAzNDM4NTY1NSwtNz
+eyJoaXN0b3J5IjpbLTU5NDQzMDE4NSwtMjAzNDM4NTY1NSwtNz
 Q2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
 -->
