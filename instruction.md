@@ -110,8 +110,10 @@ The erroneous line breaks from the previous sample are fixed below:
 
 
 ## Final step
-Now
+Each sentences is labeled as **-1 which **  
+
+Now, attempt to label at least  10 abstracts
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg0ODM1MDkwLC01OTQ0MzAxODUsLTIwMz
-QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
+eyJoaXN0b3J5IjpbLTEyMjY4MDA3OTcsLTU5NDQzMDE4NSwtMj
+AzNDM4NTY1NSwtNzQ2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
 -->
