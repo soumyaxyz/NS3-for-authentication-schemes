@@ -1,12 +1,8 @@
 # Instructions 
 ##  The raw file
 The attached file has **fifteen abstracts**  numbered from **n** to **n+15**. 
-Two
+A slice from a file containing two abstracts are shown below :
 
-    .
-    .
-    .
-    
     # 10
     ### http://arxiv.org/abs/cs/0411017v1
     ## Analysis of 802.11b MAC: A QoS, Fairness, and Performance Perspective
@@ -49,11 +45,10 @@ Two
     -1 	The deployment aspects are under development.
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.
-    
-    .
-    .
-    .
+
+
+## Step one  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1NzM0MzgxLC0yMDM0Mzg1NjU1LC03ND
-YxNTA1MDEsMTk4ODg4NDM0MF19
+eyJoaXN0b3J5IjpbMTczMDMwNDcwNiwtMjAzNDM4NTY1NSwtNz
+Q2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
 -->
