@@ -114,10 +114,11 @@ Each sentences is labeled as **-1** which means **undecided**.
 Try to identitify the sentences of the abstract  per the labels described below
 -1| undecided
 -|-
-0|
+0|BACKGROUND or OBJECTIVE
+-
 
 Now, attempt to label at least  10 abstracts
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTI5OTI5NjAsLTU5NDQzMDE4NSwtMj
-AzNDM4NTY1NSwtNzQ2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbMTA4MTA2MzA1OSwtNTk0NDMwMTg1LC0yMD
+M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
 -->
