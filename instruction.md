@@ -136,13 +136,13 @@ The abstracts samples from before are labeled. Since several lines of the second
     ## Analysis of 802.11b MAC: A QoS, Fairness, and Performance Perspective
     
     0 	Wireless LANs have achieved a tremendous amount of growth in recent years.
-    -1 	Among various wireless LAN technologies, the IEEE 802.11b based wireless LAN technology can be cited as the most prominent technology today. 
-    -1 	Despite being widely deployed, 802.11b cannot be termed as a well matured technology.
-    -1 	Although 802.11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
-    -1 	In this survey report, we identify and argue that the Medium Access Controller for 802.11b networks is the prime area for these improvements.
-    -1 	To enunciate our claims we highlight some of the quality of service, fairness, and performance issues related to 802.11b MAC.     
-    -1 	We also describe and analyze some of the current research aimed at addressing these issues.
-    -1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.11b and similar networks.
+    0 	Among various wireless LAN technologies, the IEEE 802.11b based wireless LAN technology can be cited as the most prominent technology today. 
+    0 	Despite being widely deployed, 802.11b cannot be termed as a well matured technology.
+    0 	Although 802.11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
+    1 	In this survey report, we identify and argue that the Medium Access Controller for 802.11b networks is the prime area for these improvements.
+    1 	To enunciate our claims we highlight some of the quality of service, fairness, and performance issues related to 802.11b MAC.     
+    1 	We also describe and analyze some of the current research aimed at addressing these issues.
+    2 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.11b and similar networks.
 
 
     
@@ -165,6 +165,6 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTMzODU2OCwtNTk0NDMwMTg1LC0yMD
-M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
+eyJoaXN0b3J5IjpbLTExNDI3MDA2NjMsLTU5NDQzMDE4NSwtMj
+AzNDM4NTY1NSwtNzQ2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
 -->
