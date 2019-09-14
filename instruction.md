@@ -118,11 +118,11 @@ Label|Meaning
 0|BACKGROUND or OBJECTIVE
 1|METHODS
 2|RESULTS+CONCLUSIONS
-if several 
+If several lines in an abstract are hard to classfy, leave the entire abstract UNDECIDED 
 
 Attempt to label at least  10 abstracts.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk1Mzg3MDAsLTU5NDQzMDE4NSwtMj
-AzNDM4NTY1NSwtNzQ2MTUwNTAxLDE5ODg4ODQzNDBdfQ==
+eyJoaXN0b3J5IjpbLTI3MzcxMjE0LC01OTQ0MzAxODUsLTIwMz
+QzODU2NTUsLTc0NjE1MDUwMSwxOTg4ODg0MzQwXX0=
 -->
