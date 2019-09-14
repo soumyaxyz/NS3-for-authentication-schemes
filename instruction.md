@@ -77,8 +77,10 @@ The erroneous line breaks from the previous sample are fixed below:
     -1 	We also describe and analyze some of the current research aimed at addressing these issues.
     //-1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
     //-1 	11b and similar networks.
-    -1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
-    -1 	11b and similar networks.
+    //-1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
+    //-1 	11b and similar networks.
+    -1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.11b and similar networks.
+
 
 
     
@@ -140,8 +142,7 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	In this survey report, we identify and argue that the Medium Access Controller for 802.11b networks is the prime area for these improvements.
     -1 	To enunciate our claims we highlight some of the quality of service, fairness, and performance issues related to 802.11b MAC.     
     -1 	We also describe and analyze some of the current research aimed at addressing these issues.
-    -1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
-    -1 	11b and similar networks.
+    -1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.11b and similar networks.
 
 
     
@@ -164,6 +165,6 @@ The abstracts samples from before are labeled. Since several lines of the second
     -1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
     -1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NTIzODMzMCwtNTk0NDMwMTg1LC0yMD
+eyJoaXN0b3J5IjpbLTY3MTMzODU2OCwtNTk0NDMwMTg1LC0yMD
 M0Mzg1NjU1LC03NDYxNTA1MDEsMTk4ODg4NDM0MF19
 -->
