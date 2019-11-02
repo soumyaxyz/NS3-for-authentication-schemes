@@ -226,24 +226,21 @@ for (uint32_t i = 0; i &lt; wifiUserNodes.GetN (); ++i){
   clientAppContainer.Stop (Seconds (stopTime+1));
 </code></pre>
 <p>Now, we set-up the internet stack for  the <code>NodeContainer</code>s  previously defined. We specify the use of OLSR routing. We also associate a <code>Ipv4InterfaceContainer</code> with the  previously defined<code>NetDeviceContainer</code> to assign them IPV4 addresses.</p>
-<p>Now at last, we can define the applications.  We use UDP server and clients as our applications. Each users, smart devices and  gateway node is modeled with a <code>UDPClient</code> to send the authentication messages and a <code>UdpServer</code> to receive the response.  First we  setup two <code>ApplicationContainer</code>: <code>serverAppContainer</code> and  <code>clientAppContainer</code> to hold all the udp servers and clients at once. Then we describe a prototype  udp server with the help of <code>UdpServerHelper</code>.  A UDP client in NS3 can repeatedly at fixed interval  send a packet of data of predefined size.  We could extended the <code>UdpServer</code> and <code>UdpClient</code> to define our own server and client but since we are not attempting to provide actual authentication or prove its correctness (which must be done separately) , we can merely user equal sized  data packets for our simulation. We create a udp client to send a single message, for every message.</p>
+<p>Now at last, we can define the applications.  We use UDP server and clients as our applications. Each users, smart devices and  gateway node is modeled with a <code>UDPClient</code> to send the authentication messages and a <code>UdpServer</code> to receive the response.  First we  setup two <code>ApplicationContainer</code>: <code>serverAppContainer</code> and  <code>clientAppContainer</code> to hold all the udp servers and clients at once. Then we describe a prototype  udp server with the help of <code>UdpServerHelper</code>.  A UDP client in NS3 can repeatedly at fixed interval  send a packet of data of predefined size.  We could extended the <code>UdpServer</code> and <code>UdpClient</code> to define our own server and client but since we are not attempting to provide actual authentication or prove its correctness (which must be done separately) , we can merely use equal sized  data packets for our simulation. We create a UDP client to send a single message, for every message.</p>
 <pre><code>ApplicationContainer authenticate(ApplicationContainer appContainer, double time, Ptr&lt;Node&gt; user, Ptr&lt;Node&gt; gateway , Ptr&lt;Node&gt; device ){
   if (verbose){
     std::cout&lt;&lt;"user : "&lt;&lt; user-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal ();
     std::cout&lt;&lt;"    gateway : "&lt;&lt; gateway-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal ();
 	  std::cout&lt;&lt;"    device : "&lt;&lt; device-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal ()&lt;&lt;std::endl;
   }	
-	appContainer = sendMessage(appContainer, time, user, device , M1);
+  	appContainer = sendMessage(appContainer, time, user, device , M1);
 	appContainer = sendMessage(appContainer, time, gateway, device,  M2); 
 	appContainer = sendMessage(appContainer, time, device, user, M3); 
-
   return appContainer;
 }
-
 </code></pre>
 <pre><code>ApplicationContainer sendMessage(ApplicationContainer apps, double time, Ptr&lt;Node&gt;source,Ptr&lt;Node&gt;sink, uint32_t packetSize){
-    Ipv4Address  remoteAddress = sink-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal ();
- 	  
+    Ipv4Address  remoteAddress = sink-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal (); 	  
   uint16_t port = 9;  // well-known echo port number
   Time interPacketInterval = Seconds (20.);
   UdpClientHelper client (remoteAddress, port);
@@ -395,5 +392,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzkxMTM0NiwtMzQ1NDQ3ODU0XX0=
+eyJoaXN0b3J5IjpbMjAyOTYxMjYwNCwtMzQ1NDQ3ODU0XX0=
 -->
