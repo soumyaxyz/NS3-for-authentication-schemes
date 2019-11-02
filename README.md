@@ -97,7 +97,7 @@ if (verbose)
   }
 </code></pre>
 <p>The logging module can be very useful  for debugging  simulations. This cleaned up code does not demonstrate the use of logging. Interested readers may refer to <a href="https://www.nsnam.org/docs/release/3.29/tutorial/html/tweaking.html#using-the-logging-module">this section</a> of the previously referenced NS3 tutorial.</p>
-<p>This write up assumes that the reader has already followed the NS3 tutorial and is familiar with the basics. Thus without elaborating we state that ve need distinct nodes for  each role in the simulation.  <em>mobileUserNodes</em> and  <em>smartDeviceNodes</em> account for the number of the users and smart devices in the simulation. There will be a single gateway node. <em>M<sub>1</sub></em>,  <em>M<sub>2</sub></em> and   <em>M<sub>3</sub></em> defines the sizes of the three authentication messages. <em>stopTime</em> defines when the simulation will stop. By default the code shall run the simulation for  3600 seconds or half an hour. Note that this is half hour of simulated network runtime, not how long it will take to actually run the simulation. As NS3 is a discrete event simulator it completely depends on the complexity of the protocol modelled.</p>
+<p>This write up assumes that the reader has already followed the NS3 tutorial and is familiar with the basics. Thus without elaborating we state that we need distinct nodes for  each role in the simulation.  <em>mobileUserNodes</em> and  <em>smartDeviceNodes</em> account for the number of the users and smart devices in the simulation. There will be a single gateway node. <em>M<sub>1</sub></em>,  <em>M<sub>2</sub></em> and   <em>M<sub>3</sub></em> defines the sizes of the three authentication messages. <em>stopTime</em> defines when the simulation will stop. By default the code shall run the simulation for  3600 seconds or half an hour. Note that this is half hour of simulated network runtime, not how long it will take to actually run the simulation. As NS3 is a discrete event simulator it completely depends on the complexity of the protocol modelled.</p>
 
 <pre><code>  //Since default reference loss is defined for 5 GHz, it needs to be changed when operating at 2.4 GHz
   Config::SetDefault ("ns3::LogDistancePropagationLossModel::ReferenceLoss", DoubleValue (40.046));  
@@ -395,5 +395,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxMDQwXX0=
+eyJoaXN0b3J5IjpbMjEyMjIzODg0N119
 -->
