@@ -79,22 +79,16 @@ char * stringbuilder( char* prefix,  char* sufix){
   cmd.AddValue ("M1", "Size of message 1 ", M1);
   cmd.AddValue ("M2", "Size of message 2 ", M2);
   cmd.AddValue ("M3", "Size of message 3 ", M3);
-
-
-  
-
   //
   // The system global variables and the local values added to the argument
   // system can be overridden by command line arguments by using this call.
   //
   cmd.Parse (argc, argv);
-
   if (stopTime &lt; 2)
     {
       std::cout &lt;&lt; "Use a simulation stop time &gt;= 2 seconds" &lt;&lt; std::endl;
       exit (1);
     }  
-
 if (verbose)
   {
     //LogComponentEnable("UdpClient", LOG_LEVEL_INFO);
@@ -104,9 +98,9 @@ if (verbose)
 </code></pre>
 <p>The logging module can be very useful  for debugging  simulations. This cleaned up code does not demonstrate the use of logging. Interested readers may refer to <a href="https://www.nsnam.org/docs/release/3.29/tutorial/html/tweaking.html#using-the-logging-module">this section</a> of the previously referenced NS3 tutorial.</p>
 <p>This write up assumes that the reader has already followed the NS3 tutorial and is familiar with the basics. Thus without elaborating we state that ve need distinct nodes for  each role in the simulation.  <em>mobileUserNodes</em> and  <em>smartDeviceNodes</em> account for the number of the users and smart devices in the simulation. There will be a single gateway node. <em>M<sub>1</sub></em>,  <em>M<sub>2</sub></em> and   <em>M<sub>3</sub></em> defines the sizes of the three authentication messages. <em>stopTime</em> defines when the simulation will stop. By default the code shall run the simulation for  3600 seconds or half an hour. Note that this is half hour of simulated network runtime, not how long it will take to actually run the simulation. As NS3 is a discrete event simulator it completely depends on the complexity of the protocol modelled.</p>
+
 <pre><code>  //Since default reference loss is defined for 5 GHz, it needs to be changed when operating at 2.4 GHz
-  Config::SetDefault ("ns3::LogDistancePropagationLossModel::ReferenceLoss", DoubleValue (40.046));
-  
+  Config::SetDefault ("ns3::LogDistancePropagationLossModel::ReferenceLoss", DoubleValue (40.046));  
   // creating nodes
   //NodeContainer allNodes;
   NodeContainer wifiUserNodes;
@@ -117,8 +111,7 @@ if (verbose)
   //allNodes.Add (wifiDeviceNodes);
   NodeContainer wifiGateway ;
   wifiGateway.Create (1);
-  //allNodes.Add (wifiGateway);
-
+  // allNodes.Add (wifiGateway);
   // creating wireless channel
   YansWifiChannelHelper channel = YansWifiChannelHelper::Default ();
   YansWifiPhyHelper phy = YansWifiPhyHelper::Default ();
@@ -148,6 +141,7 @@ if (verbose)
   apDevices = wifi.Install (phy, mac, wifiGateway);
 
 </code></pre>
+
 <p>We  set up the simulation such that the users, gateway and the smart devices communicate over the 2.4 GHz wi-fi networks. To this goal, we first set up ‘NodeContainer’ to separate hold the nodes for  the users, gateway and the smart devices. Then, we define a wireless channel and its properties.<br>
 <code>YansWifiChannelHelper channel = YansWifiChannelHelper::Default ();</code><br>
 <code>YansWifiPhyHelper phy = YansWifiPhyHelper::Default ();</code><br>
@@ -155,7 +149,6 @@ if (verbose)
 Then we define <code>WifiHelper</code> and <code>WifiMacHelpers</code> necessary for defining the actual wifi hardware  . Now, we can set up the <code>NetDeviceContainer</code>s  corresponding to the different nodes. Note that the gateway node is set up as a wifi Access point and the remaining are set up as wifi devices.</p>
 <pre><code>
   // defining Mobility
-
   MobilityHelper mobility;
   mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
                                  "MinX", DoubleValue (-10.0),
@@ -163,15 +156,11 @@ Then we define <code>WifiHelper</code> and <code>WifiMacHelpers</code> necessary
                                  "DeltaX", DoubleValue (5.0),
                                  "DeltaY", DoubleValue (5.0),
                                  "GridWidth", UintegerValue (5),
-                                 "LayoutType", StringValue ("RowFirst"));
-  
+                                 "LayoutType", StringValue ("RowFirst"));  
   mobility.SetMobilityModel ("ns3::RandomDirection2dMobilityModel",
-                                 "Bounds", RectangleValue (Rectangle (-150, 150, -150, 150)),
-                                 "Speed", StringValue ("ns3::ConstantRandomVariable[Constant=3]"),
+                                 "Bounds", RectangleValue (Rectangle (-150, 150, -150, 150)),                                 "Speed", StringValue ("ns3::ConstantRandomVariable[Constant=3]"),
                                  "Pause", StringValue ("ns3::ConstantRandomVariable[Constant=0.4]"));
-  mobility.Install (wifiUserNodes);
-
- 
+  mobility.Install (wifiUserNodes); 
   Ptr&lt;ListPositionAllocator&gt; subnetAlloc =   CreateObject&lt;ListPositionAllocator&gt; ();
   subnetAlloc-&gt;Add (Vector (0.0, 0.0, 0.0));   //for gateway
   for (uint32_t j = 0; j &lt; wifiDeviceNodes.GetN (); ++j){
@@ -192,9 +181,7 @@ Then we define <code>WifiHelper</code> and <code>WifiMacHelpers</code> necessary
 </ul>
 <p>We also need to define the starting position for the nodes. We utilize the  <code>GridPositionAllocator</code> to set position of the users . But, for the rest we  use a <code>ListPositionAllocator</code>  to  set the gateway at origin and randomly scatter the smartdevices across a  80 m ring with inner radius 20 m and centered on the origin.</p>
 <pre><code>
-
   // Installing internet stack
-
   InternetStackHelper stack;
   OlsrHelper olsr;
   stack.SetRoutingHelper (olsr); 
@@ -202,9 +189,7 @@ Then we define <code>WifiHelper</code> and <code>WifiMacHelpers</code> necessary
   stack.Install (wifiDeviceNodes);
   stack.Install (wifiGateway);
   // Install Ipv4 addresses
-
   Ipv4AddressHelper address;
-
   address.SetBase ("10.1.1.0", "255.255.255.0");
   Ipv4InterfaceContainer apInterface;
   apInterface = address.Assign (apDevices);
@@ -445,5 +430,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzE5ODY0ODJdfQ==
+eyJoaXN0b3J5IjpbLTg3MjgzNDQ2XX0=
 -->
