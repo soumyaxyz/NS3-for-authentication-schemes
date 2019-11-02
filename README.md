@@ -303,7 +303,7 @@ if(enableAnim) {
   flowMonitor-&gt;SerializeToXmlFile(stringbuilder(saveFilePrefix,(char*)"_flowMonitor.xml"), false, false);
 </code></pre>
 
-<p>The  <code>flowMonitor</code> is utilized to get the transmitted data form the simulation. NS3 can produce  trace(<em>.tr</em>) files  and <em>.pcap</em> files (as shown above) but using the *.xml * generated through <code>flowMonitor</code> the useful data can be extracted with much less hassle.</p>
+<p>The  <code>flowMonitor</code> is utilized to get the transmitted data form the simulation. NS3 can produce  trace(<em>.tr</em>) files  and <em>.pcap</em> files (as shown above) but using the **.xml** generated through <code>flowMonitor</code> the useful data can be extracted with much less hassle.</p>
 <pre><code>
   uint32_t bytes_received = 0;
   for (uint32_t i = 0; i &lt; serverAppContainer.GetN (); ++i){
@@ -392,5 +392,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyOTYxMjYwNCwtMzQ1NDQ3ODU0XX0=
+eyJoaXN0b3J5IjpbNjU2NjAxMDk2LC0zNDU0NDc4NTRdfQ==
 -->
