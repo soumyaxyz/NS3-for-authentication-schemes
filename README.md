@@ -31,30 +31,24 @@ The C++ code is written under the ns3 namespace. We also set up some global defa
 #include "ns3/netanim-module.h"
 #include "ns3/basic-energy-source.h"
 #include "ns3/flow-monitor-helper.h"
-//#include "ns3/simple-device-energy-model.h"
-//#include "ns3/v4ping-helper.h"
-//#include "ns3/v4ping.h"
-
-//using namespace ns3;
-
-//static bool verbose = 0;
-//uint32_t M1 = 104, M2=84, M3 = 84;
-
-//char * stringbuilder( char* prefix,  char* sufix){
- // char* buf = (char*)malloc(50); 
- // snprintf(buf, 50, "%s%s", prefix, sufix);
+#include "ns3/simple-device-energy-model.h"
+#include "ns3/v4ping-helper.h"
+#include "ns3/v4ping.h"
+using namespace ns3;
+static bool verbose = 0;
+uint32_t M1 = 104, M2=84, M3 = 84;
+char * stringbuilder( char* prefix,  char* sufix){
+  char* buf = (char*)malloc(50); 
+  snprintf(buf, 50, "%s%s", prefix, sufix);
   return  buf;
 }
 </code></pre>
 <p>We begin the program as a normal  C++ program  and define variables to be set up by the command line argument</p>
 <pre><code>int main (int argc, char *argv[])
-{
-  
+{  
   //
   // First, we declare and initialize a few local variables that control some
   // simulation parameters.
-  
-  
   uint32_t mobileUserNodes = 3;
   uint32_t smartDeviceNodes = 2;
   uint32_t stopTime = 3600;
@@ -63,8 +57,6 @@ The C++ code is written under the ns3 namespace. We also set up some global defa
   bool enableAnim = 0;
   bool verifyResults = 0; //used for regression
   char saveFilePrefix[50] ;
-  
-
   //
   // Simulation defaults are typically set next, before command line
   // arguments are parsed.
@@ -75,8 +67,7 @@ The C++ code is written under the ns3 namespace. We also set up some global defa
   // system so that they can be overridden with flags such as
   // "--smartDeviceNodes=20"
   //
-  CommandLine cmd;
-  
+  CommandLine cmd;  
   cmd.AddValue ("MU", "number of User nodes", mobileUserNodes);
   cmd.AddValue ("SD", "number of smart device nodes", smartDeviceNodes);
   cmd.AddValue ("t", "simulation stop time (seconds)", stopTime);  
@@ -454,5 +445,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MDk2NjIzNl19
+eyJoaXN0b3J5IjpbLTIxMzE5ODY0ODJdfQ==
 -->
