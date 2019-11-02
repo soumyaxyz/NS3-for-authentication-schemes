@@ -35,14 +35,14 @@ The C++ code is written under the ns3 namespace. We also set up some global defa
 //#include "ns3/v4ping-helper.h"
 //#include "ns3/v4ping.h"
 
-using namespace ns3;
+//using namespace ns3;
 
-static bool verbose = 0;
-uint32_t M1 = 104, M2=84, M3 = 84;
+//static bool verbose = 0;
+//uint32_t M1 = 104, M2=84, M3 = 84;
 
-char * stringbuilder( char* prefix,  char* sufix){
-  char* buf = (char*)malloc(50); 
-  snprintf(buf, 50, "%s%s", prefix, sufix);
+//char * stringbuilder( char* prefix,  char* sufix){
+ // char* buf = (char*)malloc(50); 
+ // snprintf(buf, 50, "%s%s", prefix, sufix);
   return  buf;
 }
 </code></pre>
@@ -453,3 +453,6 @@ for i in xrange(len(allfiles)):
 </body>
 
 </html>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTU0MDk2NjIzNl19
+-->
