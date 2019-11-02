@@ -142,7 +142,7 @@ if (verbose)
 
 </code></pre>
 
-<p>We  set up the simulation such that the users, gateway and the smart devices communicate over the 2.4 GHz wi-fi networks. To this goal, we first set up ‘NodeContainer’ to separate hold the nodes for  the users, gateway and the smart devices. Then, we define a wireless channel and its properties.<br>
+<p>We  set up the simulation such that the users, gateway and the smart devices communicate over the 2.4 GHz wi-fi networks. To this goal, we first set up ‘NodeContainer’ to separately hold the nodes for  the users, gateway and the smart devices. Then, we define a wireless channel and its properties.<br>
 <code>YansWifiChannelHelper channel = YansWifiChannelHelper::Default ();</code><br>
 <code>YansWifiPhyHelper phy = YansWifiPhyHelper::Default ();</code><br>
 <code>phy.SetChannel (channel.Create ());</code><br>
@@ -395,5 +395,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjIzODg0N119
+eyJoaXN0b3J5IjpbLTM0NTQ0Nzg1NF19
 -->
