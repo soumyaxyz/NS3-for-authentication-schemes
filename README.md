@@ -379,16 +379,13 @@ for i in xrange(len(allfiles)):
 						maxTime = recv
 					totalDelay 		= totalDelay + int(flowDetails['delaySum'][1:-4])
 					totalReceived	= totalReceived + int(flowDetails['rxBytes'])
-					tr.append(int(flowDetails['rxPackets']))
-		
-		
+					tr.append(int(flowDetails['rxPackets']))		
 		pdr = round( sum(tr)*1.0/messageCount, 2)  				#  package deliverry ratio
 		nodeCounts 		= str(allfiles[i].replace('IOT_','').replace('__flowMonitor.xml',', ').replace('x',', ') )
 		throughput 		= str( round( totalReceived / ((maxTime - minTime)/ 1000000000.0) ,3) )		# in bytes per second
 		end2endDelay 	= str( round( (totalDelay/1000000000.0) / messageCount ,3) )  					# in miliseconds
 		print nodeCounts +'messageCount = '+ str(messageCount) +', recvd = '+ str(totalReceived) +', time = '+ str(round(totalDelay/1000000000.0,3) )+ ', throughput =' +  throughput+ ', end2endDelay (sec) = '+ end2endDelay+'\n'
-		output =  nodeCounts + ', ' + str(messageCount) +', '+str(totalReceived)+ ', '+ str(round(totalDelay/1000000000.0,3) )+ ', '+str(round((maxTime - minTime)/1000000000.0,3) )+ ', '+ throughput + ', ' + end2endDelay  + ', ' + str(pdr)+"\n"
-		
+		output =  nodeCounts + ', ' + str(messageCount) +', '+str(totalReceived)+ ', '+ str(round(totalDelay/1000000000.0,3) )+ ', '+str(round((maxTime - minTime)/1000000000.0,3) )+ ', '+ throughput + ', ' + end2endDelay  + ', ' + str(pdr)+"\n"		
 		#print output		
 		summary_file.write(output)
 </code></pre>
@@ -398,5 +395,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODU4ODc2Nl19
+eyJoaXN0b3J5IjpbNTcxMDQwXX0=
 -->
