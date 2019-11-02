@@ -197,16 +197,12 @@ Then we define <code>WifiHelper</code> and <code>WifiMacHelpers</code> necessary
   apInterface = address.Assign (UserDevices);
   //Ipv4InterfaceContainer deviceInterfaces;
   apInterface = address.Assign (SmartDevices);
-
-
   // crating applications
   ApplicationContainer serverAppContainer, clientAppContainer;  
   uint16_t port = 9;  // well-known echo port number
   Ptr&lt;Node&gt; gateway = wifiGateway.Get (0);
   UdpServerHelper server(port);
   serverAppContainer.Add(server.Install (gateway));
-
-
 double time = 1;
 for (uint32_t i = 0; i &lt; wifiUserNodes.GetN (); ++i){
 	Ptr&lt;Node&gt; user = wifiUserNodes.Get (i);
@@ -224,32 +220,19 @@ for (uint32_t i = 0; i &lt; wifiUserNodes.GetN (); ++i){
   //time = time +.1;
   //std::cout &lt;&lt;"user "&lt;&lt;i&lt;&lt;std::endl;
 }
-
-
-
   serverAppContainer.Start (Seconds (0.0));
-  serverAppContainer.Stop (Seconds (stopTime+1));
-  
-
-
+  serverAppContainer.Stop (Seconds (stopTime+1));  
   //clientAppContainer.Start (Seconds (1.0));   //started induvugualy
   clientAppContainer.Stop (Seconds (stopTime+1));
-
-
-
-
-
 </code></pre>
 <p>Now, we set-up the internet stack for  the <code>NodeContainer</code>s  previously defined. We specify the use of OLSR routing. We also associate a <code>Ipv4InterfaceContainer</code> with the  previously defined<code>NetDeviceContainer</code> to assign them IPV4 addresses.</p>
 <p>Now at last, we can define the applications.  We use Udp server and clients as our applications. Each users, smart devices and  gateway node is modeled with a <code>UdpClient</code> to send the authentication messages and a <code>UdpServer</code> to receive the response.  First we  setup two <code>ApplicationContainer</code>: <code>serverAppContainer</code> and  <code>clientAppContainer</code> to hold all the udp servers and clients at once. Then we describe a prototype  udp server with the help of <code>UdpServerHelper</code>.  A udp client in NS3 can repeatedly at fixed interval  send a packet of data of predefined size.  We could extended the <code>UdpServer</code> and <code>UdpClient</code> to define our own server and client but since we are not attempting to provide actual authentication or prove its correctness (which must be done separately) , we can merely user equal sized  data packets for our simulation. We create a udp client to send a single message, for every message.</p>
-<pre><code>ApplicationContainer authenticate(ApplicationContainer appContainer, double time, Ptr&lt;Node&gt; user, Ptr&lt;Node&gt; gateway , Ptr&lt;Node&gt; device ){	
-
+<pre><code>ApplicationContainer authenticate(ApplicationContainer appContainer, double time, Ptr&lt;Node&gt; user, Ptr&lt;Node&gt; gateway , Ptr&lt;Node&gt; device ){
   if (verbose){
     std::cout&lt;&lt;"user : "&lt;&lt; user-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal ();
     std::cout&lt;&lt;"    gateway : "&lt;&lt; gateway-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal ();
 	  std::cout&lt;&lt;"    device : "&lt;&lt; device-&gt;GetObject&lt;Ipv4&gt; ()-&gt;GetAddress (1, 0).GetLocal ()&lt;&lt;std::endl;
-  }
-	
+  }	
 	appContainer = sendMessage(appContainer, time, user, device , M1);
 	appContainer = sendMessage(appContainer, time, gateway, device,  M2); 
 	appContainer = sendMessage(appContainer, time, device, user, M3); 
@@ -277,21 +260,15 @@ for (uint32_t i = 0; i &lt; wifiUserNodes.GetN (); ++i){
 <pre><code>if (verbose){
   std::cout &lt;&lt;"servers stops at  "&lt;&lt;stopTime+1&lt;&lt;std::endl;
   std::cout &lt;&lt;"final transmission  scheduled at  "&lt;&lt;(time-.33)&lt;&lt;std::endl;
-
   std::cout &lt;&lt; "server apps installed till now :"&lt;&lt;serverAppContainer.GetN ()&lt;&lt; std::endl;
   std::cout &lt;&lt; "client apps installed till now :"&lt;&lt;clientAppContainer.GetN ()&lt;&lt; std::endl;
 }
-
   snprintf(saveFilePrefix, 50, "IOT_%dx%d_", mobileUserNodes, smartDeviceNodes);
-
 if (enablePcap){
 	phy.EnablePcap (stringbuilder(saveFilePrefix,(char*)"_users"), UserDevices, 0);
     phy.EnablePcap (stringbuilder(saveFilePrefix,(char*)"_devices"), SmartDevices, 0);
     phy.EnablePcap (stringbuilder(saveFilePrefix,(char*)"_gateway"), apDevices, 0);
-
 }
-
-
 if(enableAnim) {
   AnimationInterface anim (stringbuilder(saveFilePrefix,(char*)"-animation.xml")); // Mandatory
   for (uint32_t i = 0; i &lt; wifiUserNodes.GetN (); ++i)
@@ -313,33 +290,25 @@ if(enableAnim) {
   anim.EnableWifiMacCounters (Seconds (0), Seconds (10)); //Optional
   anim.EnableWifiPhyCounters (Seconds (0), Seconds (10)); //Optional
 }
-
 </code></pre>
 <p>The above snippet of code, defines how (if the option is set) pcap files are to be saved and how (if the option is set) a xml file can be generated to be viewed in <a href="https://www.nsnam.org/wiki/NetAnim">NetAnim</a>.</p>
 <pre><code>
-
   //Populate routing table
-  Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
-
-  
-  // setting up flowMonitor
-  
+  Ipv4GlobalRoutingHelper::PopulateRoutingTables ();  
+  // setting up flowMonitor  
   Ptr&lt;FlowMonitor&gt; flowMonitor;
   FlowMonitorHelper flowHelper;
   flowMonitor = flowHelper.InstallAll();
-
   // setting up simulator
-
   Simulator::Stop (Seconds (stopTime+1));
   Simulator::Run ();
   Simulator::Destroy ();
   flowMonitor-&gt;SerializeToXmlFile(stringbuilder(saveFilePrefix,(char*)"_flowMonitor.xml"), false, false);
-
 </code></pre>
+
 <p>The  <code>flowMonitor</code> is utilized to get the transmitted data form the simulation. NS3 can produce  trace(<em>.tr</em>) files  and <em>.pcap</em> files (as shown above) but using the *.xml * generated through <code>flowMonitor</code> the useful data can be extracted with much less hassle.</p>
 <pre><code>
   uint32_t bytes_received = 0;
-
   for (uint32_t i = 0; i &lt; serverAppContainer.GetN (); ++i){
     char nodename[30+sizeof(serverAppContainer.GetN ())*8];
     uint32_t expected = 1;
@@ -356,25 +325,24 @@ if(enableAnim) {
       snprintf(nodename, sizeof(nodename), "mobile user %d ", i-smartDeviceNodes);
       expected = smartDeviceNodes*M3;
       bytes_received += expected;
-    } 
-
-    
+    }     
     std::cout &lt;&lt;"Number of bytes received at "&lt;&lt;nodename&lt;&lt;"\t : " &lt;&lt; totalPacketsThrough &lt;&lt;" / "&lt;&lt; expected &lt;&lt; std::endl;
     //uint32_t lost =  DynamicCast&lt;UdpServer&gt; (serverAppContainer.Get (i))-&gt;GetLost ();
     //uint32_t window =  DynamicCast&lt;UdpServer&gt; (serverAppContainer.Get (i))-&gt;GetPacketWindowSize ();
     //std::cout &lt;&lt;"\t. Packets lost: " &lt;&lt; lost &lt;&lt;"( "&lt;&lt;window&lt;&lt;" ) "&lt;&lt; std::endl;
   }
-
   std::cout &lt;&lt;"Total bytes received ("&lt;&lt;mobileUserNodes&lt;&lt;" , "&lt;&lt;smartDeviceNodes&lt;&lt;") : "&lt;&lt; bytes_received &lt;&lt; std::endl;
   return 0;
 }
 </code></pre>
+
 <p>The closing bit of code for our NS3 simulation. This is completely optional and merely shows some statistics after simulation completion.</p>
 <h2 id="running-the-ns3-simulation">Running the NS3 simulation</h2>
 <p>We can run the simulation with the following line in the terminal<br>
 <code>./waf --run "IOT_PUF --MU=10 --SD=20"</code></p>
 <p>Where <strong>IOT_PUF.cc</strong> is the NS3 simulation code and is saved in the <code>scratch/</code> directory. On successful execution it will generate  <strong>IOT_10_20.xml</strong> file as output.</p>
 <p>We can use a shell script to schedule the sequential run of several simulations with different parameters</p>
+
 <pre><code>./waf --run "IOT_PUF --MU=5 --SD=20
 ./waf --run "IOT_PUF --MU=10 --SD=20
 ./waf --run "IOT_PUF --MU=15 --SD=20
@@ -430,5 +398,5 @@ for i in xrange(len(allfiles)):
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MjgzNDQ2XX0=
+eyJoaXN0b3J5IjpbMTgzODU4ODc2Nl19
 -->
