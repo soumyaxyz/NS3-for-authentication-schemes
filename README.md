@@ -1,4 +1,3 @@
-#NS3
 <!DOCTYPE html>
 <html>
 <body class="stackedit">
