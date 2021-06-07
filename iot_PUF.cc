@@ -42,6 +42,7 @@ ApplicationContainer sendMessage(ApplicationContainer apps, double time, Ptr<Nod
     Ipv4Address  remoteAddress = sink->GetObject<Ipv4> ()->GetAddress (1, 0).GetLocal ();
  	  
   uint16_t port = 9;  // well-known echo port number
+  uint32_t maxPacketCount = 1;
   Time interPacketInterval = Seconds (20.);
   UdpClientHelper client (remoteAddress, port);
   client.SetAttribute ("MaxPackets", UintegerValue (maxPacketCount));
